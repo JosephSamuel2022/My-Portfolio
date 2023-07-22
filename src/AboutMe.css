@@ -1,0 +1,17 @@
+  
+  .about-me-heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    padding: 30px;
+    color: #67d8f5;
+    border-radius: 5px;
+  }
+  
+  .individual-about-me-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  

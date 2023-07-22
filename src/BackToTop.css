@@ -1,0 +1,22 @@
+.back-to-top-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+  
+  .arrow-icon {
+    font-size: 24px;
+    margin-right: 5px;
+    color: orange;
+  }
+  
+  .back-to-top-text {
+    color: orange;
+    font-size: 14px;
+    font-family: monospace;
+  }
+  

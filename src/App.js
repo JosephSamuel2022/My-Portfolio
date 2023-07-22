@@ -1,25 +1,54 @@
-import logo from './logo.svg';
+import React, { useState} from 'react';
+import Drawer from './Drawer';
 import './App.css';
+import Info from './Info';
+import Projects from './Projects';
+import TechStack from './TechStack';
+import Email from './Email';
+import ContactMe from './ContactMe';
+import BackToTop from './BackToTop';
+import AboutMe from './AboutMe';
+import Chatbot from './Chatbot';
 
-function App() {
+const App = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+
+  const toggleDrawer = () => {
+    
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+  };
+
+ 
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="overlay-container" >
+      
+      <div className="overlay">
+      <Drawer isDrawerOpen={isDrawerOpen} toggleDrawer={()=>toggleDrawer} closeDrawer={()=>closeDrawer} />
+
+        <div className='background'>
+        
+          <Info /></div>
+      
+      <AboutMe/>
+        <Projects />
+        <TechStack />
+        <Chatbot/>
+        <Email />
+        
+        <ContactMe />
+          <BackToTop />
+        
+        </div>
+        
+        </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,123 @@
+.contact-me {
+    text-align: center;
+    margin-top: 20px;
+    font-family: monospace;
+  }
+  
+  .contact-me p {
+    color: white;
+    font-family: monospace;
+  }
+  
+  .social-media-button {
+    display: flex;
+    align-items: center;
+     text-align: center;
+     justify-content: center;
+     /* margin-bottom: 20px; */
+  }
+  
+  .social-media-button > * {
+    margin-right: 10px;
+  }
+
+  .social-media-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  
+
+  .contactme-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .orange-text {
+    color: orange;
+  }
+  
+  .white-text {
+    color: white;
+  }
+
+
+  .whatsapp-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2d303d;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .whatsapp-icon-inner {
+    color: green;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .whatsapp-icon:hover {
+    background-color: #25d366;
+  }
+  
+  .whatsapp-icon:hover .whatsapp-icon-inner {
+    color: #fff;
+  }
+
+  .telegram-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: #2d303d;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .telegram-icon-inner {
+    color: #00aced;
+    font-size: 24px;
+  }
+  
+  .telegram-icon:hover {
+    background-color: #00aced;
+  }
+  
+  .telegram-icon:hover .telegram-icon-inner {
+    color: #fff;
+  }
+
+  .mail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust the width as desired */
+    height: 40px; /* Adjust the height as desired */
+    background-color: #2d303d;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mail-icon-inner {
+    color: #ff5722; /* Orange color for the mail icon */
+    font-size: 20px;
+  }
+  
+  .mail-icon:hover {
+    background-color: #ff5722; /* Change the background color on hover */
+  }
+  
+  .mail-icon:hover .mail-icon-inner {
+    color: #fff; /* Change the icon color on hover */
+  }
+  

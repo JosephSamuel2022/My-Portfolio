@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  color: white;
+  font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.content .name {
+  color: #67d8f5;
+}
+
+.content .description {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.know-more-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgb(0, 162, 255);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.background {
+  background-image: url('D:\Sam\My Portfolio\my-portfolio\public\images\Joseph Photo.jpg');
+  background-repeat: no-repeat;
+  height: 800px;
+  background-size: contain;
+}
+
+.right-half {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 150px;
+}
+
+.projects-wrapper {
+  position: relative;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.project-nav-button.left {
+  left: 0;
+}
+
+.project-nav-button.right {
+  right: 0;
+}
+
+.project-nav-button.disabled {
+  opacity: 0.5;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.project-nav-button i {
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.project-cards-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  z-index: 2;
+}
+
+.project-cards-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.individual-project {
+  flex: 0 0 300px;
+  height: 200px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.individual-project.active {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.individual-project h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
+
+.individual-project p {
+  font-size: 16px;
+}
+
+
+.overlay-container {
+  position: relative;
+  height: 100vh;
+}
+
+.overlay {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color:#131423;
+  z-index: 1;
+  padding-bottom: -100px;
+}
+
+
+
+
+
+

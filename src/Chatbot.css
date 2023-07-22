@@ -1,0 +1,67 @@
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+#chatbot {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .chatbot-heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family:monospace;
+    padding: 10px;
+    color: #67d8f5;
+    border-radius: 5px;
+  }
+  
+  .chatbot-icon {
+    margin: 20px 0;
+    margin-bottom: 50px;
+  }
+  
+
+  .chatbot-icon svg {
+    color: orange;
+    font-size: 80px;
+  }
+  
+  .question-input {
+    padding: 10px;
+    margin-right: 10px;
+    font-family: monospace;
+  }
+  
+  .ask-button {
+    padding: 10px 20px;
+    background-color: rgb(225, 0, 255);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: monospace;
+  }
+  
+  .answer-text {
+    color: #d76627;
+    font-family: monospace;
+    font-size: 18px;
+  }
+  
+  .text-area {
+    margin-bottom: 20px;
+  }
+
+  .input-area {
+    width: 280px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #67d8f5;
+    border-radius: 5px;
+    background-color: #1e2235;
+    color: #fff;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+  }

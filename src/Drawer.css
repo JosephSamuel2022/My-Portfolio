@@ -1,0 +1,143 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 10vh;
+    margin-bottom: -160px;
+    position: fixed; /* Change position to fixed */
+  top: 0; /* Add top position */
+  right: 0;
+  z-index: 999; /* Add a high z-index to ensure it stays on top */
+  }
+  
+  .open .drawer-button {
+    opacity: 0;
+  }
+  
+  .open .contact-button,
+  .open .about-button,
+  .open .project-button{
+    display: block;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    animation: change-opacity 2s ease-in-out forwards;
+  }
+
+
+  .open .close-button {
+    display: block;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    animation: close-button-appear 2s ease-in-out forwards;
+  }
+  
+  .open .close-button:hover {
+    opacity: 1;
+  }
+  
+  .close-button {
+    display: none;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .drawer.open .close-button {
+    opacity: 1;
+  }
+  
+  .drawer-button:hover,
+  .close-button:hover,
+  .about-button:hover,
+  .project-button:hover,
+  .contact-button:hover {
+    color: orange;
+  }
+  
+  .drawer-button,
+  .close-button,
+  .about-button,
+  .project-button,
+  .contact-button {
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-family: monospace;
+  }
+
+  .about-button,
+  .project-button,
+  .contact-button {
+    margin-right: 190px;
+    margin-left: 181px;
+  }
+
+
+
+  .drawer-button{
+    transition: transform 2s ease-in-out;
+    animation: close-button-appear 2s ease-in-out forwards;
+    
+}
+  
+  .drawer {
+    position: fixed;
+    top: 0;
+    right: 7;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    z-index: 2;
+    font-family: monospace;
+    background-color: #131423;
+  }
+  
+  .drawer.open {
+    justify-content: flex-start;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 30vh;
+    position: relative;
+  }
+  
+  @keyframes close-button-appear {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+      }
+      
+      100% {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+  }
+
+  @keyframes change-opacity{
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+  
+
+  .about-button.active,
+.project-button.active,
+.contact-button.active {
+  color: orange;
+}

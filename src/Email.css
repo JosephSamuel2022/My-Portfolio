@@ -1,0 +1,81 @@
+.email-container {
+    font-family: monospace;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .email-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .orange-text {
+    color: orange;
+  }
+  
+  .white-text {
+    color: white;
+  }
+
+  .text-box {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input-field {
+    font-family: monospace;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-bottom: 5px;
+    width: 300px;
+    background-color: #1e2235;
+  color: white;
+  text-align: center;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #67d8f5;
+    height: 3px;
+  }
+  
+
+  .field-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .text-area {
+    margin-bottom: 20px;
+  }
+
+  .input-area {
+    width: 280px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #67d8f5;
+    border-radius: 5px;
+    background-color: #1e2235;
+    color: #fff;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .send-mail-button {
+    background-color: #d76627;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
