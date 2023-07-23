@@ -1,30 +1,35 @@
-import React, { useState } from 'react';
-import IndividualProject from './IndividualProject';
-import './Projects.css';
+import React, { useState } from "react";
+import IndividualProject from "./IndividualProject";
+import "./Projects.css";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const projects = [
     {
       id: 1,
-      title: 'PREDICTING LEVEL OF RESPIRATORY IMBALANCE',
-      description: "Flask web app for predicting respiratory imbalance and storing patient details with visualizations.",
-      imageUrl: 'images/hospital.jpg',
-      githubLink: 'https://github.com/JosephSamuel2022/Predicting-Level-of-Respiratory-Imbalance-using-Flask-',
+      title: "PREDICTING LEVEL OF RESPIRATORY IMBALANCE",
+      description:
+        "Flask web app for predicting respiratory imbalance and storing patient details with visualizations.",
+      imageUrl: "images/hospital.jpg",
+      githubLink:
+        "https://github.com/JosephSamuel2022/Predicting-Level-of-Respiratory-Imbalance-using-Flask-",
     },
     {
       id: 2,
-      title: 'ONLINE SHOPPING APPLICATION ',
-      description: 'Implemented user registration, login, shopping, and cart functionality.',
-      imageUrl: 'images/shopping.png',
-      githubLink: 'https://github.com/JosephSamuel2022/Shopping_Application',
+      title: "ONLINE SHOPPING APPLICATION ",
+      description:
+        "Implemented user registration, login, shopping, and cart functionality.",
+      imageUrl: "images/shopping.png",
+      githubLink: "https://github.com/JosephSamuel2022/Shopping_Application",
     },
     {
       id: 3,
-      title: 'EMPLOYEE PROMOTION & STARTUP CASE STUDY',
-      description: 'Built classification model using decision trees and random forest. Performed EDA with visualizations.',
-      imageUrl: 'images/employee.png',
-      githubLink: 'https://github.com/JosephSamuel2022/Employee-Promotion-and-Startup-Case-Study',
+      title: "EMPLOYEE PROMOTION & STARTUP CASE STUDY",
+      description:
+        "Built classification model using decision trees and random forest. Performed EDA with visualizations.",
+      imageUrl: "images/employee.png",
+      githubLink:
+        "https://github.com/JosephSamuel2022/Employee-Promotion-and-Startup-Case-Study",
     },
 
     // {
@@ -36,7 +41,6 @@ const Projects = () => {
     // },
     // Add more projects here
   ];
-  
 
   const windowSize = 3; // Size of the sliding window
 
@@ -61,34 +65,40 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects">
-      <h1  className="projects-heading">Projects</h1>
-    <div className="projects-container">
-      <button className={`project-nav-button left ${currentIndex === 0 ? 'disabled' : ''}`} onClick={handlePrevious}>
-        <i className="fas fa-chevron-left"></i>
-      </button>
-      <div className="project-cards-wrapper">
-        {projects
-          .slice(currentIndex, currentIndex + windowSize)
-          .map((project, index) => (
-            <IndividualProject
-              key={project.id}
-              project={project}
-              
-              isActive={index === Math.floor(windowSize / 2)}
-            />
-          ))}
+    <section id="projects">
+      <div id="projects">
+        <h1 className="projects-heading">Projects</h1>
+        <div className="projects-container">
+          <button
+            className={`project-nav-button left ${
+              currentIndex === 0 ? "disabled" : ""
+            }`}
+            onClick={handlePrevious}
+          >
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <div className="project-cards-wrapper">
+            {projects
+              .slice(currentIndex, currentIndex + windowSize)
+              .map((project, index) => (
+                <IndividualProject
+                  key={project.id}
+                  project={project}
+                  isActive={index === Math.floor(windowSize / 2)}
+                />
+              ))}
+          </div>
+          <button
+            className={`project-nav-button right ${
+              currentIndex >= projects.length - windowSize ? "disabled" : ""
+            }`}
+            onClick={handleNext}
+          >
+            <i className="fas fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
-      <button
-        className={`project-nav-button right ${
-          currentIndex >= projects.length - windowSize ? 'disabled' : ''
-        }`}
-        onClick={handleNext}
-      >
-        <i className="fas fa-chevron-right"></i>
-      </button>
-      </div>
-      </div>
+    </section>
   );
 };
 
