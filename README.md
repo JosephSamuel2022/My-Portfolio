@@ -62,6 +62,10 @@ Styling: I utilized CSS and custom styles to design the website, creating a visu
 
 Deployment: I learned how to deploy the project on various platforms to make it accessible to others.
 
+## Deployed Website
+
+I have deployed the website on Render, and you can access it at the following URL: https://josephsamuel.onrender.com/.
+
 ## Get in Touch
 
 Thank you for visiting my portfolio website! I hope you find it informative and engaging. If you have any questions, project collaboration ideas, or just want to say hello, feel free to reach out to me using the contact form or through my social media and GitHub accounts.
