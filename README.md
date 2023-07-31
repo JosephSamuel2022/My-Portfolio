@@ -64,7 +64,7 @@ Deployment: I learned how to deploy the project on various platforms to make it 
 
 ## Deployed Website
 
-I have deployed the website on Render, and you can access it at the following URL: https://josephsamuel.onrender.com/.
+I have deployed the website on Render, and you can access it at the following URL: https://josephsamuelm.vercel.app/.
 
 ## Get in Touch
 
