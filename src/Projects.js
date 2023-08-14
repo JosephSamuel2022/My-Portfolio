@@ -9,7 +9,7 @@ const Projects = () => {
 			id: 1,
 			title: "RESPIRATORY IMBALANCE PREDICTOR",
 			description:
-				"Flask web app for predicting respiratory imbalance and storing patient details with visualizations.",
+				"Advanced Flask and React-powered web app for predicting respiratory imbalances, securely storing patient data, and offering insightful visualizations.",
 			imageUrl: "images/hospital.jpg",
 			githubLink:
 				"https://github.com/JosephSamuel2022/Respiratory-Imbalance-Front-End",
@@ -24,6 +24,14 @@ const Projects = () => {
 		},
 		{
 			id: 3,
+			title: "GROUP CHAT WEB APPLICATION",
+			description:
+				"Group Chat App enables real-time group conversations using React.js and Node.js. Join chat rooms, exchange messages, and connect effortlessly with friends and colleagues.",
+			imageUrl: "images/chat.png",
+			githubLink: "https://github.com/JosephSamuel2022/Group-Chat",
+		},
+		{
+			id: 4,
 			title: "EMPLOYEE PROMOTION & STARTUP CASE STUDY",
 			description:
 				"Built classification model using decision trees and random forest. Performed EDA with visualizations.",
