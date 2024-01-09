@@ -25,7 +25,7 @@ const Info = () => {
 					<h1>
 						I am <span className='name'>Joseph Samuel M</span>
 					</h1>
-					<p className='description'>Final Year Student at MIT</p>
+					<p className='description'>Intern at Blue Yonder</p>
 
 					<div className='social-icons'>
 						<a
